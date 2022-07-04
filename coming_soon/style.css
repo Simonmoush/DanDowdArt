@@ -45,7 +45,10 @@ body{
 	font-weight: normal;
 }
 
-.divider{
+.spacer{
+	padding: 20px 0;
+}
+.nav-divider{
 	color: var(--off-white);
 	width: 75%;
 	margin: 0 auto 0 0;
