@@ -2,12 +2,144 @@
 <html>
 
 <head>
-	<title>Dan Dowd Art</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="The digital home of all things Dan Dowd">
+	<meta name="keywords" content="Art, Sculpture, Assemblage, Design, Maine, Artist">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dan Dowd World</title>
 </head>
 
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
+	:root{
+		--off-white: #fffcf9;
+		--dan-red: rgb(181, 46, 45);
+		--dan-dark-red: rgb(140, 26, 24);
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body{
+		font-family: 'Gulzar', serif;
+		display: flex;
+		flex-direction: row;
+		height: 100vh;
+		margin: 0;
+	}
+
+	#lhs{
+		flex: 1 1 calc(100% / 3);
+		color: var(--off-white);
+		background: rgb(255,114,111);
+		background: radial-gradient(circle at center 60px, var(--dan-red) 0%, var(--dan-dark-red) 100%);
+	}
+
+	#rhs{
+		flex: 1 1 calc(2 * (100% / 3));
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--off-white);
+	}
+
+	#title{
+		margin: 60px auto 60px 20px;
+		line-height: 1.3em;
+		font-size: 2.375em;
+		font-weight: normal;
+	}
+
+	.divider{
+		color: var(--off-white);
+		width: 75%;
+		margin: 0 auto 0 0;
+	}
+
+	#nav{
+		margin: 0;
+		padding: 0;
+	}
+
+	#nav li{
+		list-style: none;
+		margin: 20px;
+		font-size: 1.5em;
+	}
+
+	.section{
+		text-align: center;
+		width: 500px;
+		max-width: 90%;
+	}
+
+	.contact-links{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+
+	.contact-links > div {
+		
+	}
+
+	.secret{
+		color: black;
+		background-color: black;
+	}
+
+	.secret:hover{
+		background-color: var(--off-white);
+	}
+
+</style>
+
 <body>
-	<h1>Dan Dowd Art</h1>
-	<h4>Coming Soon...</h4>
+	<div id="lhs">
+		<h1 id="title">
+			Dan Dowd
+		</h1>
+		<hr class="divider">
+		<ul id="nav">
+			<li>Art</li>
+			<li>Conservation</li>
+			<li>World</li>
+		</ul>
+	</div>
+
+	<div id="rhs">
+		<div class="section">
+			<div>
+				<div class="anim-type">loading amazing website...</div>
+				<div class="anim-type">in the meantime you can find me here:</div>
+			</div>
+
+			<div class="contact-links">
+				<div class="contact-item anim-enter">
+					<div>Instagram:</div>
+					<a href="https://www.instagram.com/dandowdart/">@DanDowdArt</a>
+				</div>
+
+				<div class="contact-item anim-enter">
+					<div>Email:</div>
+					<a href="mailto:dandowdart@gmail.com">DanDowdArt@gmail.com</a>
+				</div>
+
+				<div class="contact-item anim-enter">
+					<div>Snail Mail:</div>
+					<span class="secret">that's a secret!</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
