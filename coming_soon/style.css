@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
 
 :root{
-	--off-white: #fffcf9;
+	--off-white: #fffbf6;
 	--dan-red: rgb(181, 46, 45);
 	--dan-dark-red: rgb(140, 26, 24);
 }
@@ -18,14 +18,16 @@ body{
 	font-family: 'Gulzar', serif;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	height: 100vh;
 	margin: 0;
 }
 
 #lhs{
 	flex: 1 1 calc(100% / 3);
+	min-width: 280px;
 	color: var(--off-white);
-	background: rgb(255,114,111);
+	background: var(--dan-red);
 	background: radial-gradient(circle at center 60px, var(--dan-red) 0%, var(--dan-dark-red) 100%);
 }
 
@@ -66,9 +68,9 @@ body{
 }
 
 .section{
+	margin: 50px auto;
 	text-align: center;
-	width: 500px;
-	max-width: 90%;
+	max-width: 800px;
 }
 
 .contact-links{
@@ -79,7 +81,7 @@ body{
 }
 
 .contact-links > div {
-	
+	margin: auto 20px;
 }
 
 .secret{

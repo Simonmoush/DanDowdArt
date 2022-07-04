@@ -32,7 +32,7 @@ window.addEventListener("doneTyping", function(){
 });
 
 
-function type(elem, letter_delay = 75, delay_variation = 100, trigger_next = true, trigger_delay = 100){
+function type(elem, letter_delay = 75, delay_variation = 100, trigger_next = true, trigger_delay = 800){
 	let content = elem.textContent;
 	elem.textContent = "";
 	elem.style.visibility = "visible";
