@@ -26,8 +26,8 @@ window.addEventListener("doneTyping", function(){
 		translateY: [-50, 0],
 		opacity: [0, 1],
 		easing: "easeOutQuart",
-		duration: 800,
-		delay: anime.stagger(300)
+		duration: 1000,
+		delay: anime.stagger(400)
 	});
 });
 
