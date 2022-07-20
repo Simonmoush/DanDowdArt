@@ -2,12 +2,6 @@
            Current Issues
 ========================================
 
-I'm having trouble hosting the site locally (wordpress gives a fatal error because it says mysql_connect() is undefined)
 
-I think there might be a couple potential causes or simultaneous issues:
-	1) the local mysql db doesn't have the same creds and db tables as the server
-	2) the wordpress installation on the server is a little out of date
-	3) the mariadb service isn't running on my local machine
-		I don't know what that service is supposed to do
-
-
+Next Steps: Make the DB with the same creds!
+and sync
