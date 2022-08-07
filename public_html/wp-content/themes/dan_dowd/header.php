@@ -9,17 +9,24 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-	<!-- nav -->
-		<div id="lhs">
-			<h1 id="title">
-				Dan Dowd
-			</h1>
-			<hr class="nav-divider">
-			<ul id="nav">
-				<li>Art</li>
-				<li>Conservation</li>
-				<li>World</li>
-			</ul>
+		<!-- title and nav -->
+		<div id="sidebar">
+			<div id="sidebar-top">
+				<h1 id="title">
+					Dan Dowd Art
+				</h1>
+				<hr class="nav-divider">
+				<ul id="nav">
+					<li>Art</li>
+					<li>Conservation</li>
+					<li>World</li>
+				</ul>
+			</div>
+			<div id="sidebar-bottom">
+				<div id="sidebar-footer">
+					<?php get_template_part("footer_content"); ?>
+				</div>
+			</div>
 		</div>
-
-		<div id="rhs"> <!-- start of content -->
+		<!-- start of content -->
+		<div id="content">
