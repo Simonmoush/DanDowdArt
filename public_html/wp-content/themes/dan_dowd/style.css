@@ -69,16 +69,32 @@
 
 
 /* small */
+	body{
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
 	#sidebar{
 		width: 100%;
+		flex: 0 0;
 	}
 
 	#content{
 		width: 100%;
+		flex: 1 0;
+		min-height: 1000px;
 	}
 
 	#footer{
+		flex: 0 0;
 		display: block;
+		color: var(--off-white);
+		background: var(--dan-red);
+		background: radial-gradient(circle at center 60px, var(--dan-red) 0%, var(--dan-dark-red) 100%);
+		padding: 10px;
+		min-height: 200px;
 	}
 	
 	#sidebar-footer{
