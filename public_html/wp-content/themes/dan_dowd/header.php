@@ -13,14 +13,13 @@
 		<div id="sidebar">
 			<div id="sidebar-top">
 				<h1 id="title">
-					Dan Dowd Art
+					<a href="<?= site_url(); ?>"><?php bloginfo('name'); ?></a>
 				</h1>
 				<hr class="nav-divider">
-				<ul id="nav">
-					<li>Art</li>
-					<li>Conservation</li>
-					<li>World</li>
-				</ul>
+				<?php wp_nav_menu([
+					"menu" => "primary",
+					"menu_id" => "nav",
+				]); ?>
 			</div>
 			<div id="sidebar-bottom">
 				<div id="sidebar-footer">

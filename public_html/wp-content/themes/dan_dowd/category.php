@@ -1,6 +1,6 @@
 <?php
 /*
-	page for showing a post
+	page for showing all posts in a category
 */
 
 get_header();
