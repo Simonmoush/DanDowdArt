@@ -15,13 +15,10 @@
 <div id="art-categories">
 	<?php
 
-	$cat_args = [
-		"parent" => 5
-	];
+	$art_cat = get_category_by_slug("art");
+	$sub_cats = get_categories($art_cat->term_id);
 
-	$art_cats = get_categories($cat_args);
-
-	forEach($art_cats as $cat){ ?>
+	forEach($sub_cats as $cat){ ?>
 		<?php $cat_img_url = "http://localhost:8000/wp-content/uploads/2022/07/P1006406.jpg"; ?>
 		<div class='category'>
 			<img class="category-img" src="<?= $cat_img_url; ?>">
